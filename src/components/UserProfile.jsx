@@ -1,11 +1,10 @@
-const UserProfile = (props) => {
+function UserProfile() {
   return (
-    <div>
-      <h2>{props.name}</h2>
-      <p>Age: {props.age}</p>
-      <p>Bio: {props.bio}</p>
+    <div style={{ border: '1px solid blue', padding: '10px', margin: '10px', borderRadius: '8px' }}>
+      <span style={{ color: 'blue', fontWeight: 'bold' }}>Zakaria Zamoum</span>
+      <p>Front-End Engineer | React Specialist</p>
     </div>
   );
-};
+}
 
 export default UserProfile;
