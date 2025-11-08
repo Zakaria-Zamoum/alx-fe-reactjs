@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  );
-}
-
-export default App;
-=======
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
@@ -35,6 +8,8 @@ import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import UserProfile from './components/UserProfile';
+import Counter from './components/Counter'; // ✅ NEW IMPORT
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -59,8 +34,11 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-<UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+        <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
       </div>
+
+      <Counter /> {/* ✅ NEW COMPONENT */}
+
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
@@ -70,4 +48,3 @@ function App() {
 }
 
 export default App;
->>>>>>> 4ce4377f2b10e38c38f3908dc8fdaefdc9d5ffd0

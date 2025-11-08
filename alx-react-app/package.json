@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "my-company",
-=======
   "name": "alx-react-app",
->>>>>>> 4ce4377f2b10e38c38f3908dc8fdaefdc9d5ffd0
   "private": true,
   "version": "0.0.0",
   "type": "module",
