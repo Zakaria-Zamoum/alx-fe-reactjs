@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+// src/components/Navbar.jsx
+import { Link } from 'react-router-dom';
 
 function Navbar() {
-  const navStyle = {
-    display: "flex",
-    gap: "20px",
-    padding: "10px",
-    backgroundColor: "#f0f0f0",
-    borderBottom: "1px solid #ccc"
-  };
-
   return (
-    <nav style={navStyle}>
+    <nav
+      style={{
+        display: 'flex',
+        justifyContent: 'space-around', 
+        padding: '10px',
+        backgroundColor: '#f0f0f0',
+        borderBottom: '1px solid #ccc'
+      }}
+    >
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/services">Services</Link>
