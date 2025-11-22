@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { advancedUserSearch } from "../services/githubService";
+import { fetchUserData, advancedUserSearch } from "../services/githubService";
 
 function Search() {
   const [username, setUsername] = useState("");
@@ -16,11 +16,16 @@ function Search() {
     setUsers([]);
 
     try {
-      const results = await advancedUserSearch({ username, location, minRepos });
-      if (results && results.length > 0) {
-        setUsers(results);
+      // ✅ If only username is provided → fetchUserData
+      if (username && !location && !minRepos) {
+        const user = await fetchUserData(username);
+        setUsers(user ? [user] : []);
+        if (!user) setError("User not found");
       } else {
-        setError("Looks like we cant find any users");
+        // ✅ Otherwise → advanced search
+        const results = await advancedUserSearch({ username, location, minRepos });
+        setUsers(results);
+        if (results.length === 0) setError("No users found");
       }
     } catch {
       setError("Error fetching users");
@@ -66,26 +71,20 @@ function Search() {
       {users.length > 0 && (
         <div className="mt-6 space-y-4">
           {users.map((user) => (
-            <div
-              key={user.id}
-              className="flex items-center space-x-4 p-4 border rounded"
-            >
-              <img
-                src={user.avatar_url}
-                alt={user.login}
-                className="w-16 h-16 rounded-full"
-              />
+            <div key={user.id || user.login} className="flex items-center space-x-4 p-4 border rounded">
+              <img src={user.avatar_url} alt={user.login} className="w-16 h-16 rounded-full" />
               <div>
                 <h2 className="font-bold">{user.login}</h2>
-                {/* ✅ html_url added here */}
-                <a
-                  href={user.html_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500"
-                >
-                  View Profile
-                </a>
+                {user.html_url && (
+                  <a
+                    href={user.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500"
+                  >
+                    View Profile
+                  </a>
+                )}
               </div>
             </div>
           ))}
