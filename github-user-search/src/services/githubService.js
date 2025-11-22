@@ -1,6 +1,5 @@
 import axios from "axios";
 
-// ✅ Simple user fetch by username
 export const fetchUserData = async (username) => {
   try {
     const response = await axios.get(`https://api.github.com/users/${username}`, {
@@ -10,12 +9,11 @@ export const fetchUserData = async (username) => {
     });
     return response.data;
   } catch (error) {
-    console.error("Error fetching user data:", error);
+    console.error("Error fetching user data:", error); // ✅ keep error logging
     return null;
   }
 };
 
-// ✅ Advanced search with filters
 export const advancedUserSearch = async ({ username, location, minRepos }) => {
   try {
     let query = "";
@@ -34,7 +32,7 @@ export const advancedUserSearch = async ({ username, location, minRepos }) => {
 
     return response.data.items;
   } catch (error) {
-    console.error("Error fetching advanced search:", error);
+    console.error("Error fetching advanced search:", error); // ✅ safe logging
     return [];
   }
 };

@@ -71,8 +71,15 @@ function Search() {
       {users.length > 0 && (
         <div className="mt-6 space-y-4">
           {users.map((user) => (
-            <div key={user.id || user.login} className="flex items-center space-x-4 p-4 border rounded">
-              <img src={user.avatar_url} alt={user.login} className="w-16 h-16 rounded-full" />
+            <div
+              key={user.id || user.login}
+              className="flex items-center space-x-4 p-4 border rounded"
+            >
+              <img
+                src={user.avatar_url}
+                alt={user.login}
+                className="w-16 h-16 rounded-full"
+              />
               <div>
                 <h2 className="font-bold">{user.login}</h2>
                 {user.html_url && (
