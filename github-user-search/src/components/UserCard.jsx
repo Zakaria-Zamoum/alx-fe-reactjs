@@ -11,7 +11,7 @@ function UserCard({ user }) {
       <div>
         <h2 className="font-bold">{user.login}</h2>
         <a
-          href={user.html_url}
+          href={user.html_url}   {/* ✅ GitHub profile link */}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500"
