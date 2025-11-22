@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { advancedUserSearch } from "../services/githubService";
-import UserCard from "./UserCard";
 
 function Search() {
   const [username, setUsername] = useState("");
@@ -67,7 +66,28 @@ function Search() {
       {users.length > 0 && (
         <div className="mt-6 space-y-4">
           {users.map((user) => (
-            <UserCard key={user.id} user={user} />
+            <div
+              key={user.id}
+              className="flex items-center space-x-4 p-4 border rounded"
+            >
+              <img
+                src={user.avatar_url}
+                alt={user.login}
+                className="w-16 h-16 rounded-full"
+              />
+              <div>
+                <h2 className="font-bold">{user.login}</h2>
+                {/* ✅ html_url added here */}
+                <a
+                  href={user.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500"
+                >
+                  View Profile
+                </a>
+              </div>
+            </div>
           ))}
         </div>
       )}
