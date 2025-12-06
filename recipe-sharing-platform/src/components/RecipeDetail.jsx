@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import data from '../data.json';
+import Navigation from './Navigation';
 
 function RecipeDetail() {
   const { id } = useParams();
@@ -37,8 +38,11 @@ function RecipeDetail() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Navigation */}
+      <Navigation />
+
       {/* Header with Back Button */}
-      <header className="bg-white shadow-sm sticky top-0 z-10">
+      <header className="bg-white shadow-sm sticky top-16 z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link to="/" className="text-blue-500 hover:text-blue-700 font-semibold flex items-center gap-2">
             ← Back to Recipes
