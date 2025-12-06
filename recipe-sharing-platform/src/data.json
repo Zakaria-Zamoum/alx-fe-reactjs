@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/400x300?text=Spaghetti+Carbonara",
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta or guanciale, diced",
+      "4 large eggs",
+      "100g Pecorino Romano cheese, grated",
+      "Black pepper to taste",
+      "Salt"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil and cook the spaghetti until al dente.",
+      "While the pasta cooks, fry the diced pancetta in a large pan until crispy.",
+      "In a bowl, whisk together eggs, grated cheese, and black pepper.",
+      "Drain the pasta, reserving 1 cup of pasta water.",
+      "Remove the pan with pancetta from heat and add the hot pasta.",
+      "Pour the egg mixture over the pasta and toss quickly, adding pasta water as needed to create a creamy sauce.",
+      "Serve immediately with extra cheese and black pepper."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/400x300?text=Chicken+Tikka+Masala",
+    "ingredients": [
+      "800g boneless chicken breasts, cut into chunks",
+      "1 cup yogurt",
+      "3 tbsp tikka masala paste",
+      "400ml coconut milk",
+      "400g canned tomatoes",
+      "2 tbsp butter",
+      "1 large onion, diced",
+      "3 garlic cloves, minced",
+      "Fresh cilantro",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and 2 tbsp of tikka paste for at least 30 minutes.",
+      "Heat butter in a large pan and cook the marinated chicken until golden. Set aside.",
+      "In the same pan, sauté onion and garlic until fragrant.",
+      "Add remaining tikka paste and cook for 1-2 minutes.",
+      "Add canned tomatoes and coconut milk, stirring well.",
+      "Return the chicken to the pan and simmer for 15-20 minutes until cooked through.",
+      "Season with salt and pepper, garnish with fresh cilantro, and serve with rice or naan."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Vegetable Stir Fry",
+    "summary": "A quick and healthy dish loaded with colorful vegetables tossed in a savory sauce.",
+    "image": "https://via.placeholder.com/400x300?text=Vegetable+Stir+Fry",
+    "ingredients": [
+      "2 cups mixed vegetables (broccoli, bell peppers, carrots, snap peas)",
+      "3 tbsp soy sauce",
+      "2 tbsp sesame oil",
+      "3 garlic cloves, minced",
+      "1 tbsp ginger, minced",
+      "1 tbsp cornstarch",
+      "¼ cup vegetable broth",
+      "2 tbsp vegetable oil",
+      "Sesame seeds for garnish",
+      "Green onions for garnish"
+    ],
+    "instructions": [
+      "In a small bowl, mix soy sauce, sesame oil, cornstarch, and vegetable broth.",
+      "Heat vegetable oil in a wok or large skillet over high heat.",
+      "Add garlic and ginger, stir-fry for 30 seconds until fragrant.",
+      "Add vegetables and stir-fry for 5-7 minutes until tender-crisp.",
+      "Pour in the sauce and toss until everything is coated and sauce thickens.",
+      "Garnish with sesame seeds and green onions.",
+      "Serve hot with rice or noodles."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Margherita Pizza",
+    "summary": "A simple yet elegant pizza with fresh mozzarella, basil, and tomato sauce on a thin crust.",
+    "image": "https://via.placeholder.com/400x300?text=Margherita+Pizza",
+    "ingredients": [
+      "1 pizza dough",
+      "200ml tomato sauce",
+      "250g fresh mozzarella cheese",
+      "Fresh basil leaves",
+      "2 tbsp olive oil",
+      "Salt and oregano to taste"
+    ],
+    "instructions": [
+      "Preheat oven to 475°F (245°C).",
+      "Stretch the pizza dough and place it on a baking sheet or pizza stone.",
+      "Brush dough lightly with olive oil.",
+      "Spread tomato sauce evenly over the dough.",
+      "Tear mozzarella into pieces and distribute over the sauce.",
+      "Bake for 12-15 minutes until the crust is golden and cheese is bubbly.",
+      "Remove from oven, top with fresh basil, drizzle with olive oil, and serve hot."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Thai Green Curry",
+    "summary": "A fragrant and spicy coconut curry with vegetables and protein in an aromatic green sauce.",
+    "image": "https://via.placeholder.com/400x300?text=Thai+Green+Curry",
+    "ingredients": [
+      "3 tbsp green curry paste",
+      "400ml coconut milk",
+      "300g chicken breast, sliced",
+      "200g bamboo shoots",
+      "100g Thai basil",
+      "2 tbsp fish sauce",
+      "1 tbsp brown sugar",
+      "2 tbsp vegetable oil",
+      "Lime juice to taste"
+    ],
+    "instructions": [
+      "Heat oil in a wok or large pan over medium-high heat.",
+      "Add green curry paste and fry for 2-3 minutes.",
+      "Pour in half of the coconut milk and stir until combined.",
+      "Add sliced chicken and cook until mostly done.",
+      "Add bamboo shoots and remaining coconut milk.",
+      "Season with fish sauce and brown sugar.",
+      "Simmer for 10 minutes until chicken is cooked through.",
+      "Add Thai basil and lime juice just before serving.",
+      "Serve with jasmine rice."
+    ]
+  }
+]
