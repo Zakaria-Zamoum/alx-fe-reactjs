@@ -28,7 +28,7 @@ const TodoList = () => {
 
   return (
     <div>
-      <h2>Todo List</h2>
+      <h1>Todo List</h1>
       <AddTodoForm onAdd={addTodo} />
       <ul>
         {todos.map((todo) => (
@@ -46,6 +46,7 @@ const TodoList = () => {
                 e.stopPropagation();
                 deleteTodo(todo.id);
               }}
+              style={{ marginLeft: '10px' }}
             >
               Delete
             </button>
