@@ -7,6 +7,8 @@ const RegistrationForm = () => {
     password: "",
   });
 
+  const { username, email, password } = formData; // ✅ destructure values
+
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
@@ -17,15 +19,13 @@ const RegistrationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Basic validation
-    if (!formData.username || !formData.email || !formData.password) {
+    if (!username || !email || !password) {
       setError("All fields are required!");
       return;
     }
 
     setError("");
 
-    // Mock API call
     try {
       const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
         method: "POST",
@@ -50,7 +50,7 @@ const RegistrationForm = () => {
         <input
           type="text"
           name="username"
-          value={formData.username}
+          value={username}   
           onChange={handleChange}
         />
       </div>
@@ -60,7 +60,7 @@ const RegistrationForm = () => {
         <input
           type="email"
           name="email"
-          value={formData.email}
+          value={email}     
           onChange={handleChange}
         />
       </div>
@@ -70,7 +70,7 @@ const RegistrationForm = () => {
         <input
           type="password"
           name="password"
-          value={formData.password}
+          value={password}   
           onChange={handleChange}
         />
       </div>
